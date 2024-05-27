@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   /* background-color:#808080; */
+   backdrop-filter: blur(10px);
+   height: max-content;
+   padding:  1rem;
+   position: absolute;
+   z-index: 1;
+   width: 100%;
+   box-sizing: border-box;
+}
+.logo{
+    height: 5rem;
+    width: 10rem;
+    margin-left: 3rem;
+}
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    /* position: absolute; */
+    justify-content: flex-end;
+    /* right: 3rem; */
+}
+.nav_bar li{
+list-style: none;
+}
+.nav_bar a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+}
+.btn{
+    height: max-content;
+    width: max-content;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px ;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.ham_bar{
+    height: 100%;
+    width: 100%;
+    display: none;
+    justify-content: flex-end;
+    padding-right: 2rem;
+}
+.ham_bar i{
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+
+
+/* form css */
+/* body{
+    position: relative;
+} */
+.form{
+    height: max-content;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:100px;
+  
+}
+.form_c{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:100px;
+  
+}
+.form-h{
+    height: max-content;
+    width: 100%;
+    background-color: gray;
+    padding: 2rem;
+    font-size: 3rem;
+    text-transform:uppercase;
+    text-align: center;
+}
+.frm1{
+    height: max-content;
+    width: 50rem;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    border: 3px solid blue;
+}
+.input{
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    width: 80%;
+}
+ .input label{
+    font-size: 2rem;
+ }
+ .input input{
+    height: 3rem;
+    width: 100%;
+    font-size: 2rem;
+ }
+ .radio{
+    display: flex;
+    flex-direction: column;
+ }
+.opt{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.opt label{
+    font-size: 2rem;
+}
+.head label{
+    font-size: 3rem;
+}
+.chkbx label{
+    font-size: 2rem;
+}
+.chkbx{
+    padding: 2rem 0rem;
+}
+.frm_btn{
+    display: flex;
+    justify-content: space-around;
+}
+.frm_btn button{
+    height: max-content;
+    width: max-content;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 2px;
+}
+
+
+
+
+
+@media (max-width:800px){
+    .ham_bar{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 2rem;
+    }
+    .nav_bar{
+        display: none;
+    }
+    .change{
+        display: flex;
+        flex-direction:column;
+        gap: 4rem;
+        position: absolute;
+        justify-content: flex-end;
+        right: 0;
+        top: 7rem;
+        background-color: #000000;
+        padding: 2rem 3rem;
+        width: 50vh;
+        cursor: pointer;
+    }
+}

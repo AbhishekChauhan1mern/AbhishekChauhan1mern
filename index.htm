@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styling/main.css">
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="/web_project/images/fitness_logo.png" alt="logo">
+        </div>
+        <div class="nav_bar" id="nav_bar">
+            <li><a href="./index.htm">Home</a></li>
+            <li><a href="./Classes.htm">Classes</a></li>
+            <li><a href="./Products.htm">Products</a></li>
+            <li><a href="./Blog.htm">Blog</a></li>
+            <li><button class="btn" onclick="tap()">Join Us</button></li>
+        </div>
+        <div class="ham_bar">
+            <i class="fa-solid fa-bars" id="ham" onclick="change()"></i>
+        </div>
+    </nav>
+    <!-- hero section -->
+    <header>
+        <img src="/web_project/images/training.jpeg" alt="img" class=" hero">
+        <div class="hero_txt">
+            <h1>Revitalze your body</h1>
+            <p>Fall in love taking care of yourself mind,body and sprit.</p>
+        </div>
+        <div class="hero_btn">
+            <button class="btn1">Get Start</button>
+            <button class="btn2"> Free Trial <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <!-- this for icn box -->
+        <div class="hero_icns">
+            <img src="/web_project/Fitness_Star_Gym/Vector-5.png" alt="">
+            <img src="/web_project/Fitness_Star_Gym/Vector-4.png" alt="">
+            <img src="/web_project/Fitness_Star_Gym/Vector-6.png" alt="">
+        </div>
+    </header>
+    <!-- for qury form -->
+    <div class="form" id="form">
+        <h1 class="form-h">subscription plan</h1>
+        <form class="frm1">
+            <div class="input">
+                <label for="">Full Name:</label>
+                <input type="text" name="" placeholder="enter your name" id="name">
+            </div>
+            <div class="input">
+                <label for="">Email:</label>
+                <input type="email" name="" placeholder="enter your email" id="email">
+            </div>
+            <div class="radio">
+                <div class="head">
+                    <label for="">Duration :</label>
+                </div>
+                <div class="opt">
+                    <div>
+                        <input type="radio" name="Monthly" id="">
+                        <label for="Monthly">Monthly</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Monthly" id="">
+                        <label for="">Yearly</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="radio">
+                <div class="head">
+                    <label for="">Mode of payment:</label>
+                </div>
+                <div class="opt">
+                    <div>
+                        <input type="radio" name="one" id="">
+                        <label for="Monthly">Cash</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="one" id="">
+                        <label for="">Online</label>
+                    </div>
+                </div>
+            </div>
+            <div class="radio">
+                <div class="head">
+                    <label for="">Personal training:</label>
+                </div>
+                <div class="opt">
+                    <div>
+                        <input type="radio" name="required" id="">
+                        <label for="Monthly">Required</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="required" id="">
+                        <label for="">Not Required</label>
+                    </div>
+                </div>
+                <div class="chkbx">
+                    <input type="checkbox" name="" id="">
+                    <label for="">I accept all terms and conditions provided in this form</label>
+
+
+                </div>
+                <div class="frm_btn">
+                    <button onclick="buy()">Buy Plan</button>
+                    <button onclick="del()">Cancle</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- img program -->
+    <div class="containor">
+        <div class="first_flex">
+            <div class="bx1">
+                <img src="/web_project/images/weight-pound.png" alt="">
+                <p>Weight Loss</p>
+            </div>
+            <div class="bx2">
+                <img src="/web_project/images/yoga.png" alt="">
+                <p>Classic Yoga</p>
+            </div>
+            <div class="bx3">
+                <img src="/web_project/images/cycling.png" alt="">
+                <p>Cycling</p>
+            </div>
+
+        </div>
+        <div class="second_flex">
+            <div class="bx4">
+                <img src="/web_project/images/biceps.png" alt="">
+                <p>Bodybuilding</p>
+            </div>
+            <div class="bx5">
+                <img src="/web_project/images/hypertrophy.png" alt="">
+                <p>hypertrophy</p>
+            </div>
+            <div class="bx6">
+                <img src="/web_project/images/running.png" alt="">
+                <p>Running</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- subscription component -->
+    <div class="subcription">
+        <h1 class="subcription_head">subscription Plans</h1>
+        <div class="container">
+            <div class="box">
+                <span class="title">Basic</span>
+                <p style="font-size: 1.5rem;">for 12 months</p>
+                <div>
+                    <strong>800/month</strong>
+                    <p>for streaming</p>
+                    <button class="box_btn">Select Plan</button>
+                </div>
+            </div>
+            <div class="box">
+                <span class="title">Intermediate</span>
+                <p style="font-size: 1.5rem;">for 12 months</p>
+                <div>
+                    <strong>1000/month</strong>
+                    <p>for streaming</p>
+                    <button class="box_btn">Select Plan</button>
+                </div>
+            </div>
+            <div class="box">
+                <span class="title">Advanced</span>
+                <p style="font-size: 1.5rem;">for 12 months</p>
+                <div>
+                    <strong>1500/month</strong>
+                    <p>for streaming</p>
+                    <button class="box_btn">Select Plan</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- image banner -->
+    <div class="banner">
+        <img src="/web_project/images/fitness-club.jpeg" alt="">
+    </div>
+    <div class="manage">
+        <div class="manage_skill">
+            <div class="img1">
+                <img src="/web_project/Fitness_Star_Gym/gm 1.png" alt="">
+                <h1>Good Management</h1>
+                <p>What hurts today makes you stronger tomarrow</p>
+            </div>
+            <div class="img1">
+                <img src="/web_project/Fitness_Star_Gym/ps1 1.png" alt="">
+                <h1>Practice Sessions</h1>
+                <p>Motivate is what gets you started</p>
+            </div>
+            <div class="img1">
+                <img src="/web_project/Fitness_Star_Gym/ft2 1.png" alt="">
+                <h1>Personal Trainers</h1>
+                <p>If it doesn't challange you. It won't change you.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="box2">
+        <div class="crd1">
+            <img src="/web_project/Fitness_Star_Gym/Rectangle 25.png" alt="">
+            <h1>Best place for body transformation</h1>
+        </div>
+        <div class="crd1">
+            <img src="/web_project/Fitness_Star_Gym/Rectangle 98.png" alt="">
+            <h1>Best Cross fit gym on this area</h1>
+        </div>
+        <div class="crd1">
+            <img src="/web_project/Fitness_Star_Gym/Rectangle 27.png" alt="">
+            <h1>Best Bodybuilding gym in this city it has all required equipment</h1>
+        </div>
+    </div>
+    <!-- This is footer section -->
+    <footer>
+        <div class="footer">
+            <div class="ft1">
+                <img src="/web_project/images/logo1.png" alt="">
+                <strong>
+                    Prioritize Your Fitness Goals with our world class services
+                </strong>
+            </div>
+            <div class="ftr_blk">
+                <div class="ft2">
+                    <h1>COMPANY</h1>
+                    <a href="">About</a>
+                    <a href="">Carrers</a>
+                    <a href="">Blogs</a>
+                </div>
+                <div class="ft2">
+                    <h1>CONTACT</h1>
+                    <a href="">Help/FAQs</a>
+                    <a href="">Press</a>
+                    <a href="">Mobile</a>
+                </div>
+                <div class="ft2">
+                    <h1>MORE</h1>
+                    <a href="">Program</a>
+                    <a href="">Plans</a>
+                    <a href="">Method</a>
+                </div>
+            </div>
+            <div class="ft5">
+                <h1> <u>POPULAR TAGS</u></h1>
+                <div class="ft-bx">
+                    <span>ABS</span>
+                    <span>Workout</span>
+                    <span>Nutrition</span>
+                    <span>GYM</span>
+                    <span>Boxing</span>
+                    <span>Trainers</span>
+                    <span>Facilities</span>
+                </div>
+            </div>
+        </div>
+        <div class="ftr2">
+            <p>CopyRight All Right Reserved</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="./js/nav.js"></script>
+</body>
+
+</html>

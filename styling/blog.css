@@ -1,0 +1,216 @@
+@import url('./nav.css');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.hero_sec{
+    background-color: bisque;
+    height: max-content;
+    width: 100%;
+    padding: 3rem 2rem;
+}
+.hero_bx{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction:row;
+
+    gap: 3rem;
+    width: 100%;
+}
+.hero_bx .img{
+    height: 40rem;
+    width:70rem;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
+.hero_bx p{
+    font-size: 2rem;
+    font-weight: bold;
+    word-spacing: 1rem;
+    width: 100%;
+}
+/* hero classes end */
+
+/* next componend */
+.flip-card {
+    background-color: transparent;
+    max-width: 60rem;
+    height: 35rem;
+    perspective: 1000px;
+    font-family: sans-serif;
+  margin: 0 auto;
+   padding-top: 3rem;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color: black;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card-back p{
+    color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+  }
+  .flip-card-front img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+       bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .next_blog{
+    height: 40rem;
+    width: 100%;
+    background-color: darkslategrey;
+  }
+/* footer section */
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: gray;
+  padding: 3rem 2rem;
+  gap: 4rem;
+}
+.ft1{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30rem;
+}
+.ft1 img{
+  height: 5rem;
+}
+.ft1 strong{
+  font-size: 3rem;
+  color: orange;
+  text-align: center;
+}
+.ftr_blk{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+.ft2{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.ft2 h1{
+  font-size: 3rem;
+  color: #fff;
+}
+.ft2 a{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+.ft5{
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.ft5 h1 u{
+font-size: 3rem;
+color: #fff;
+
+}
+.ft-bx {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.ft-bx span{
+  height: max-content;
+  width: max-content;
+  padding: 1rem;
+  background: orange;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+.ftr2{
+  height: max-content;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background-color: orange;
+ 
+}
+.ftr2 p{
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+
+@media (max-width:700px){
+    .hero_bx{
+        margin-top: 10rem;
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    .flip-card {
+        background-color: transparent;
+        max-width: 60rem;
+        height: 35rem;
+        perspective: 1000px;
+        font-family: sans-serif;
+      margin: 0 auto;
+       /* padding-top: 3rem; */
+       padding:3rem 3rem 0rem 3rem
+      }
+   
+}
